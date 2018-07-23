@@ -1,9 +1,36 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>  
-    <h2>State Count in Hello: {{ count }}</h2>
+    <div class="md-layout">
+      <md-card class="md-layout-item mx-2">
+        <md-card-header>
+          <div class="md-title">{{count}}</div>
+        </md-card-header>
 
-    <md-button class="md-raised md-primary" v-on:click="increment">Increment</md-button>
+        <md-card-actions>
+          <md-button class="md-raised md-primary" v-on:click="increment">Increment</md-button>
+        </md-card-actions>
+      </md-card>
+
+      <md-card class="md-layout-item mx-2">
+        <md-card-header>
+          <div class="md-title">{{count}}</div>
+        </md-card-header>
+
+        <md-card-actions>
+          <md-button class="md-raised md-primary" v-on:click="increment">Increment</md-button>
+        </md-card-actions>
+      </md-card>
+
+      <md-card class="md-layout-item mx-2">
+        <md-card-header>
+          <div class="md-title">{{count}}</div>
+        </md-card-header>
+
+        <md-card-actions>
+          <md-button class="md-raised md-primary" v-on:click="increment">Increment</md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
   </div>
 </template>
 
@@ -14,7 +41,6 @@
     name: 'hello',
     data() {
       return {
-        msg: 'Welcome to Your Vue.js PWA',
       };
     },
     computed: {
@@ -26,9 +52,8 @@
     methods: {
       increment() {
         this.$store.commit('increment', {
-          amount: 5,
+          amount: 1,
         });
-        this.$store.dispatch('fetchFromDb');
       },
     },
   };
