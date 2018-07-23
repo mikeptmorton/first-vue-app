@@ -2,9 +2,11 @@
   <div id="app">
     <header>
       <span class="routing-link" v-on:click="goToHome">Home</span>
-      <span class="routing-link" v-on:click="goToHello">Hello</span>
       <span class="routing-link" v-on:click="goToAbout">About</span>
+      <span class="routing-link" v-on:click="goToHello">Hello</span>
+      <span class="routing-link" v-on:click="goToTest">Test</span>
     </header>
+    
     <main>
       <img src="./assets/logo.png" alt="Vue.js PWA">
       <router-view></router-view>
@@ -17,13 +19,16 @@ export default {
   name: 'app',
   methods: {
     goToHello() {
-      this.$router.push('Hello');
+      this.$router.push('hello');
     },
     goToHome() {
-      this.$router.push('Home');
+      this.$router.push('home');
     },
     goToAbout() {
-      this.$router.push('About');
+      this.$router.push('about');
+    },
+    goToTest() {
+      this.$router.push('test');
     },
   },
 };

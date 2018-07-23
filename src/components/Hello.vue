@@ -4,7 +4,6 @@
     <h2>State Count in Hello: {{ count }}</h2>
 
     <md-button class="md-raised md-primary" v-on:click="increment">Increment</md-button>
-    <Test/>
   </div>
 </template>
 

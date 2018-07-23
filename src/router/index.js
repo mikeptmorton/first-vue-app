@@ -4,7 +4,7 @@ import Hello from '@/components/Hello';
 import Test from '@/components/Test';
 import Home from '@/views/Home';
 import About from '@/views/About';
-import NotFound from '@/views/404';
+// import NotFound from '@/views/404';
 
 Vue.use(Router);
 
@@ -12,8 +12,7 @@ export default new Router({
   routes: [
     {
       path: '*',
-      name: 'NotFound',
-      component: NotFound,
+      redirect: '/home',
     },
     {
       path: '/home',
@@ -26,7 +25,7 @@ export default new Router({
       component: About,
     },
     {
-      path: '/Hello',
+      path: '/hello',
       name: 'Hello',
       component: Hello,
     },
