@@ -12,6 +12,7 @@ import router from './router';
 import State from './state/state';
 import Test from './components/Test';
 import Hello from './components/Hello';
+import BarCodeReader from './components/BarCodeReader';
 
 Vue.config.productionTip = false;
 
@@ -23,6 +24,7 @@ Vue.use(State);
 
 Vue.component('Test', Test);
 Vue.component('Hello', Hello);
+Vue.component('BarCodeReader', BarCodeReader);
 
 /* eslint-disable no-new */
 new Vue({

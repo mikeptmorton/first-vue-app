@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Hello from '@/components/Hello';
 import Test from '@/components/Test';
+import BarCodeReader from '@/components/BarCodeReader';
 import Home from '@/views/Home';
 import About from '@/views/About';
 // import NotFound from '@/views/404';
@@ -18,6 +19,11 @@ export default new Router({
       path: '/home',
       name: 'Home',
       component: Home,
+    },
+    {
+      path: '/barcodereader',
+      name: 'Bar Code Reader',
+      component: BarCodeReader,
     },
     {
       path: '/about',

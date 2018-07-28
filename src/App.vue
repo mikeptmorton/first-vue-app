@@ -2,13 +2,13 @@
   <div id="app">
     <header>
       <span class="routing-link" v-on:click="goToHome">Home</span>
-      <span class="routing-link" v-on:click="goToAbout">About</span>
+      <span class="routing-link" v-on:click="goToBarCodeReader">Bar Code Reader</span>
       <span class="routing-link" v-on:click="goToHello">Hello</span>
       <span class="routing-link" v-on:click="goToTest">Test</span>
     </header>
     
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
+      <!-- <img src="./assets/logo.png" alt="Vue.js PWA"> -->
       <router-view></router-view>
     </main>
   </div>
@@ -20,6 +20,9 @@ export default {
   methods: {
     goToHello() {
       this.$router.push('hello');
+    },
+    goToBarCodeReader() {
+      this.$router.push('barcodereader');
     },
     goToHome() {
       this.$router.push('home');
